@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <p class="text-primary"><a class="navbar-brand" href="../index.php">ERP Model.</a></p>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,13 +12,13 @@
             echo '
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#our-services">Our Services</a>
+                        <a class="nav-link text-light" href="#our-services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#about-us">About Us</a>
+                        <a class="nav-link text-light" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="./login.php">Login</a>
+                        <a class="nav-link text-light" href="./login.php">Login</a>
                     </li>
                 </ul>
             ';
@@ -79,7 +79,7 @@
                         <a class="nav-link" href="./accountant/index.php">Fees, Payments & Receipts</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-primary" href="./logout.php">Logout</a>
+                        <a class="nav-link text-light" href="./logout.php">Logout</a>
                     </li>
                 </ul>
             ';
