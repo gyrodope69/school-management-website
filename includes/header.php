@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md" style="background-color:rgba(0, 0, 0, 0.7);color:#fff;border-color: #080808">
     <p class="text-primary"><a class="navbar-brand" href="../index.php">ERP Model.</a></p>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,13 +12,13 @@
             echo '
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#our-services">Our Services</a>
+                        <a class="nav-link text-primary" href="#our-services"><b style="color:white">Our Services</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#about-us">About Us</a>
+                        <a class="nav-link text-primary" href="#about-us"><b style="color:white">About Us</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="./login.php">Login</a>
+                        <a class="nav-link text-primary" href="./login.php"><b style="color:white">Login</b></a>
                     </li>
                 </ul>
             ';
@@ -79,7 +79,7 @@
                         <a class="nav-link" href="./accountant/index.php">Fees, Payments & Receipts</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-light" href="./logout.php">Logout</a>
+                        <a class="nav-link text-primary" href="./logout.php">Logout</a>
                     </li>
                 </ul>
             ';
