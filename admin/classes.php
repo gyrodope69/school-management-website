@@ -63,7 +63,7 @@
 
             if ($query == "manage") {
                 echo "
-                    <h2>Teacher List</h2>
+                    <h2>Class List</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci mollitia illum atque sequi distinctio optio minus natus nulla vel?</p>    
                     <input class='form-control w-25 mt-4 mb-4' id='searchInput' type='text' placeholder='Filter by any attribute'> 
 
