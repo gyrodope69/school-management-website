@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md" style="background-color:rgba(0, 0, 0, 0.7);color:#fff;border-color: #080808">
+<nav class="navbar navbar-expand-md">
     <p class="text-primary"><a class="navbar-brand" href="../index.php">ERP Model.</a></p>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,13 +12,13 @@
             echo '
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#our-services"><b style="color:white">Our Services</b></a>
+                        <a class="nav-link text-primary" href="#our-services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#about-us"><b style="color:white">About Us</b></a>
+                        <a class="nav-link text-primary" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="./login.php"><b style="color:white">Login</b></a>
+                        <a class="nav-link text-primary" href="./login.php">Login</a>
                     </li>
                 </ul>
             ';
@@ -28,10 +28,10 @@
             echo '
                 <ul class="navbar-nav text-center">
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="./admin/admin.php">Dashboard</a>
+                        <a class="nav-link" href="../admin/admin.php">Dashboard</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-primary" href="./logout.php">Logout</a>
+                        <a class="nav-link text-primary" href="../logout.php">Logout</a>
                     </li>
                 </ul>
             ';
@@ -57,13 +57,13 @@
                         <a class="nav-link" href="./teacher/grade.php">Grade</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../teacher/attendance.php">Attendance</a>
+                        <a class="nav-link" href="./teacher/attendance.php">Attendance</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../profile.php">Profile</a>
+                        <a class="nav-link" href="./profile.php">Profile</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../logout.php">Logout</a>
+                        <a class="nav-link" href="./logout.php">Logout</a>
                     </li>
                 </ul>
             ';

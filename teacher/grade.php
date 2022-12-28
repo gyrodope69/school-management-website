@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <?php
         if ($_SESSION["user_category"] == "teacher") {
-            include("../includes/header.php");
+            include("../includes/header2.php");
 
             $email = $_SESSION["user_email"];
             $teacher_query = "SELECT teacher_id FROM teachers WHERE email = '$email'";
@@ -153,7 +153,7 @@
                     foreach ($students_details as $key => $student_details) {
                         $student_id = $student_details["student_id"];
                         $find_marks = "SELECT * FROM grades WHERE student_id = '$student_id' AND class_id = '$class_id' AND subject_id = '$subject_id'";
-                        $response = mysqli_query($conn, $find_marks) or die(mysqli_errno($conn));
+                        $response = mysqli_query($conn, $find_marks) or die(mysqli_error($conn));
                         if (mysqli_num_rows($response) == 0) {
                             $mid_term_1 = $mid_term_2 = $end_term = $other = 0;
                         } else {

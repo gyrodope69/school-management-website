@@ -37,7 +37,6 @@
                             <div class='form-group'>
                                 <label>Select Standard:</label>
                                 <select class='form-control' name='class_id'>
-                             
                 ";
 
                 foreach ($classes_details as $key => $class_details) {

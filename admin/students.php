@@ -42,9 +42,8 @@
                         <div class='row'>
                             <div class='col'>
                                 <div class='form-group'>
-                                    <label>Class:</label>         
+                                    <label>Class:</label>
                                     <select class='form-control' name='class_id' required>
-                             
                 ";
 
                 $classes_query = "SELECT class_id, standard FROM classes WHERE active = 1 ORDER BY class_id ASC";
@@ -137,7 +136,7 @@
                                 <th>Gender</th>
                                 <th>D.O.B</th>
                                 <th>Address</th>
-                             
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -156,11 +155,11 @@
                             <td>{$student_details['address']}</td>
                     ";
 
-                    // if($student_details['active'] == '1'){
-                    //     echo "<td>Active</td>";
-                    // }else{
-                    //     echo "<td>Inactive</td>";
-                    // }
+                    if($student_details['active'] == '1'){
+                        echo "<td>Active</td>";
+                    }else{
+                        echo "<td>Inactive</td>";
+                    }
 
                     echo "
                             <td>
@@ -273,27 +272,27 @@
                     ";
                 }
 
-                // if($student_details['active'] == '1'){
-                //     echo "
-                //     <div class='form-group'>
-                //         <label>Status:</label>
-                //             <select class='form-control' name='active' required>
-                //                 <option selected value='1'>Active</option>
-                //                 <option value='0'>Inactive</option>
-                //             </select>
-                //      </div>
-                //     ";
-                // }else{
-                //     echo "
-                //     <div class='form-group'>
-                //         <label>Status:</label>
-                //             <select class='form-control' name='active' required>
-                //                 <option value='1'>Active</option>
-                //                 <option selected value='0'>Inactive</option>
-                //             </select>
-                // </div>
-                //     ";
-                // }
+                if($student_details['active'] == '1'){
+                    echo "
+                        <div class='form-group'>
+                            <label>Status:</label>
+                            <select class='form-control' name='active' required>
+                                <option selected value='1'>Active</option>
+                                <option value='0'>Inactive</option>
+                            </select>
+                        </div>
+                    ";
+                }else{
+                    echo "
+                        <div class='form-group'>
+                            <label>Status:</label>
+                            <select class='form-control' name='active' required>
+                                <option value='1'>Active</option>
+                                <option selected value='0'>Inactive</option>
+                            </select>
+                        </div>
+                    ";
+                }
 
 
                 echo "

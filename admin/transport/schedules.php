@@ -347,7 +347,7 @@
 
             if ($query == "delete") {
                 $schedule_id = $_GET["schedule_id"];
-                $schedule_query = "DELETE FROM vehicles_schedules WHERE schedule_id = $schedule_id";
+                $schedule_query = "DELETE FROM vehicles_schedule WHERE schedule_id = $schedule_id";
                 mysqli_query($conn, $schedule_query) or die(mysqli_errno($conn));
                 header('Location: ./schedules.php?query=manage');
             }

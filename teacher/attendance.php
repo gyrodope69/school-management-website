@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <?php
         if ($_SESSION["user_category"] == "teacher") {
-            include("../includes/header.php");
+            include("../includes/header2.php");
 
             $email = $_SESSION["user_email"];
             $teacher_query = "SELECT teacher_id FROM teachers WHERE email = '$email'";
@@ -105,7 +105,6 @@
                             <div class='form-group'>
                                 <label>Select Subject:</label>
                                 <select class='form-control' name='subject_id' required>
-                                
                 ";
 
                 for ($i = 0; $i < sizeof($filtered_subjects); $i++) {
@@ -160,7 +159,7 @@
                         $response = mysqli_query($conn, $student_attendance) or die(mysqli_error($conn));
                         $student_attendance_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
 
-                        $attendance_percentage = ($student_attendance_details["present"] / $student_attendance_details["total"]) * 100;
+                        $attendance_percentage = ($student_attendance_details["present"] /( $student_attendance_details["present"] + $student_attendance_details["absent"]) )* 100;
 
                         echo "
                                 <tr>
