@@ -60,6 +60,7 @@ border-color: white;
 
                 foreach ($subjects as $key => $subject) {
                     echo "<label class='checkbox-inline pr-2'><input type='checkbox' name='subject_ids[]' value={$subject['subject_id']}>{$subject['code']}</label>";
+               echo "</br>"; 
                 }
 
                 echo "
