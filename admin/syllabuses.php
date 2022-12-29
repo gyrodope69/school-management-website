@@ -14,7 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+ <style type="text/css">
+
+.btn {
+border-color: white;
+color: dark;
+background-color:white;
+}
+.btn-outline-dark {
+color: gray;
+border-color: white;
+}
+</style>
+    </head>
 
 <body>
     <div class="container-fluid p-4">
@@ -25,9 +37,9 @@
             if ($query == "add") {
                 echo "
                    <div class='card account custom-shadow mt-5 mb-5 p-3'>
-                        <h3 class='text-center'>Get Syllabus</h3>
+                         <h3 class='text-center'  style='background-color:gray;color:white;border-radius: 1rem 0 0 1rem;'>Add Syllabus</h3>
                         <hr>
-                        <form class='card-body' method='POST' action='find-file.php'>
+                        <form class='card-body' style='background-color:gray;color:white;' method='POST' action='./manage-syllabus.php' enctype='multipart/form-data'>                            
                             <div class='form-group'>
                                     <label>Class:</label>
                                     <select class='form-control' name='class_id' required>
