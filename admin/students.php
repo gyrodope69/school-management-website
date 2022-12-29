@@ -14,9 +14,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
-<body>
+       <style type="text/css">
+
+    .btn {
+    border-color: white;
+    color: #3AB4F2;
+    background-color:white;
+    }
+    .btn-outline-primary {
+    color: #3AB4F2;
+    border-color: white;
+}
+    </style>
+    </head>
+
+
+    
+    
+    <body>
     <div class="container-fluid p-4">
         <?php
         if ($_SESSION["user_category"] == "admin") {
@@ -24,9 +40,10 @@
             
             if ($query == "add") {
                 echo "
-                    <div class='card account custom-shadow mt-5 p-2'>
-                    <h3 class='text-center'>Add Student</h3>
-                    <hr>
+                  <div class='card account custom-shadow mt-5 p-2' style='background-color:#3AB4F2;color:white;border-radius: 1rem 0 0 1rem';>
+                        <h3 class='text-center'>Add Student</h3>
+                        <hr>
+                    
                 
                     <form class='card-body' method='POST' action='./manage-student.php'>
                         <div class='form-group'>
@@ -330,8 +347,8 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_student' class='btn btn-outline-primary w-50'>Update Profile</button>
-                            </div>
+                                    <button type='submit' name='update_student' class='btn btn-outline-light w-50'>Update Profile</button>
+                                </div>
 
                         </form>
                     </div>

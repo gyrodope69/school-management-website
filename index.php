@@ -13,40 +13,57 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+   
+
+            .mt-5 {
+               margin-top:0;
+            }
+    </style>
     </head>
 
 <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" style="padding:0;">
 
         <?php include("./includes/header.php") ?>
 
-        <div class="row">
+        <div class="row" style="padding: 5%";>
+          
+
             <div class="wrapper col-12 col-sm-12 col-lg-8">
-                <div id="carousel-update" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#carousel-update" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-update" data-slide-to="1"></li>
-                        <li data-target="#carousel-update" data-slide-to="2"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
+                <div id="carousel-update" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+                    
+                     <div class="carousel-inner" >
+                        
+                        
+                        
+                        <div class="carousel-item active ">
+                        <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-update" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-update" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+
+                        <div class="carousel-item ">
+                        <img src="./assets/vendor/slideshow-img-1.jpg" alt="School Preview">
+                        </div>
+
+                        
+
+                     </div>
+
+                  
+                    
                 </div>
             </div>
-            <div class="announcements col-12 col-sm">
-                <div class="text-center">
-                    <p>ANNOUNCEMENTS</p>
+
+           
+
+            <div class="announcements col-12 col-sm" >
+                <div class="text-center"style="background-color:black;color:#fff;">
+                    <h4>ANNOUNCEMENTS</h4>
                 </div>     
+
                 <ul id="notice" class="text-center p-3">
                 <marquee direction="up" scrollamount="3" behavior="scroll-alternate" loop="">
+
                     <?php
                     $announcements_query = "SELECT * FROM announcements WHERE active = 1 ORDER BY announcement_id ASC";
                     $response = mysqli_query($conn, $announcements_query);
@@ -69,62 +86,67 @@
                     </marquee>
                 </ul>   
             </div>
+
+
         </div>
         <br>
 
+//
         <div class="jumbotron jumbotron-fluid mt-5" style="padding: 50px 50px 50px 50px; margin: 4.5rem">
             <h2 align="left">Today's Transport Schedules</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
             <?php
             $today = strtolower(date('l'));
 
-            $schedules_query = "SELECT * FROM vehicles_schedule WHERE day = '$today' ORDER BY departure";
-            $response = mysqli_query($conn, $schedules_query);
-            $schedules_details = mysqli_fetch_all($response, MYSQLI_ASSOC);
 
-            echo "
-                <table class='table table-hover'>
-                    <thead>
-                        <tr>
-                            <th>Vehicle No.</th>
-                            <th>Depar ture Time</th>
-                            <th>Arrival Time</th>
-                            <th>Route</th>
-                            <th>Driver</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            ";
-
-            foreach ($schedules_details as $attribute => $schedule_details) {
-                $driver_query = "SELECT * FROM miscellaneous WHERE miscellaneous_id = '{$schedule_details['driver_id']}' ";
-                $response = mysqli_query($conn, $driver_query) or die(mysqli_error($conn));
-                $driver_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
-
-                $route_query = "SELECT * FROM routes WHERE route_id = '{$schedule_details['route_id']}' ";
-                $response = mysqli_query($conn, $route_query);
-                $route_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
-
-                $vehicle_query = "SELECT * FROM vehicles WHERE vehicle_id = '{$schedule_details['vehicle_id']}' ";
-                $response = mysqli_query($conn, $vehicle_query);
-                $vehicle_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
+                $schedules_query = "SELECT * FROM vehicles_schedule WHERE day = '$today' ORDER BY departure";
+                $response = mysqli_query($conn, $schedules_query);
+                $schedules_details = mysqli_fetch_all($response, MYSQLI_ASSOC);
 
                 echo "
-                    <tr>
-                        <td>{$vehicle_details['vehicle_number']}</td>
-                        <td>{$schedule_details['departure']}</td>
-                        <td>{$schedule_details['arrival']}</td>
-                        <td>{$route_details['start']} to {$route_details['finish']}</td>
-                        <td>{$driver_details['name']}</td>
-                    </tr>
+                    <table class='table table-hover'>
+                        <thead>
+                            <tr>
+                                <th>Vehicle No.</th>
+                                <th>Depar ture Time</th>
+                                <th>Arrival Time</th>
+                                <th>Route</th>
+                                <th>Driver</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                 ";
-            }
 
-            echo "
-                        </tbody>
-                    </table>
-                ";
-            ?>
+                foreach ($schedules_details as $attribute => $schedule_details) {
+                    $driver_query = "SELECT * FROM miscellaneous WHERE miscellaneous_id = '{$schedule_details['driver_id']}' ";
+                    $response = mysqli_query($conn, $driver_query) or die(mysqli_error($conn));
+                    $driver_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
+
+                    $route_query = "SELECT * FROM routes WHERE route_id = '{$schedule_details['route_id']}' ";
+                    $response = mysqli_query($conn, $route_query);
+                    $route_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
+
+                    $vehicle_query = "SELECT * FROM vehicles WHERE vehicle_id = '{$schedule_details['vehicle_id']}' ";
+                    $response = mysqli_query($conn, $vehicle_query);
+                    $vehicle_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
+
+                    echo "
+                        <tr>
+                            <td>{$vehicle_details['vehicle_number']}</td>
+                            <td>{$schedule_details['departure']}</td>
+                            <td>{$schedule_details['arrival']}</td>
+                            <td>{$route_details['start']} to {$route_details['finish']}</td>
+                            <td>{$driver_details['name']}</td>
+                        </tr>
+                    ";
+                }
+
+                echo "
+                            </tbody>
+                        </table>
+                    ";
+                ?>
+            </div>
         </div>
 
         <div class="service-container" id="our-services" style="padding: 10px 0px 0px 0px; margin: 4.5rem">

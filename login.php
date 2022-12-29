@@ -20,11 +20,7 @@ include("./config.php");
    
    body{
        padding: 0px;
-      /* background-color:#82AAE3; */
-      /* padding-bottom:100px; */
-      /* background-color:#00E7FF; */
-
-
+     
    }
    .row {
     --mdb-gutter-x: 0;

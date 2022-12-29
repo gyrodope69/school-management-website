@@ -14,8 +14,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+   <style type="text/css">
+
+.btn {
+border-color: black;
+color: black;
+background-color:white;
+}
+.btn-outline-dark {
+color: #C85C8E;
+border-color: white;
+}
+</style>
+</head>
+   
 <body>
     <div class="container-fluid p-4">
         <?php
@@ -24,10 +37,10 @@
 
             if ($query == "add") {
                 echo "
-                    <div class='card account custom-shadow mt-5 p-3'>
-                        <h3 class='text-center'>Add Announcements</h3>
+                    <div class='card account custom-shadow mt-5 p-3' style='background-color:black;color:white;border-radius: 1rem 0 0 1rem';>
+                        <h3  class='text-center' style='background-color:gray;color:white;'>Add Announcements📢</h3>
                         <hr>
-                        <form class='card-body' method='POST' action='manage-announcement.php'>
+                        <form class='card-body'style='background-color:gray;color:white;' method='POST' action='manage-announcement.php'>
                             <div class='form-group'>
                                 <label>Title:</label>
                                 <input type='text' class='form-control' name='title' required>
@@ -158,7 +171,7 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_announcement' class='btn btn-outline-primary w-50'>Update Announcement</button>
+                                <button type='submit' name='update_announcement' class='btn btn-outline-dark w-50'>Update Announcement</button>
                             </div>
                         </form>
                     </div>

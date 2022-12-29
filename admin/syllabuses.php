@@ -24,10 +24,10 @@
 
             if ($query == "add") {
                 echo "
-                    <div class='card account custom-shadow mt-5 p-3'>
-                        <h3 class='text-center'>Add Syllabus</h3>
+                   <div class='card account custom-shadow mt-5 mb-5 p-3'>
+                        <h3 class='text-center'>Get Syllabus</h3>
                         <hr>
-                        <form class='card-body' method='POST' action='./manage-syllabus.php' enctype='multipart/form-data'>                            
+                        <form class='card-body' method='POST' action='find-file.php'>
                             <div class='form-group'>
                                     <label>Class:</label>
                                     <select class='form-control' name='class_id' required>
