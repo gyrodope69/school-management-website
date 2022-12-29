@@ -14,7 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+ <style type="text/css">
+
+.btn {
+border-color: white;
+color: dark;
+background-color:white;
+}
+.btn-outline-dark {
+color: gray;
+border-color: white;
+}
+</style>
+	</head>
 
 <body>
     <div class="container-fluid p-4">
@@ -25,9 +37,9 @@
             if ($query == "add") {
                 echo "
 					<div class='card account custom-shadow mt-4 p-3'>
-						<h3 class='text-center'>Create Route</h3>
+						<h3 class='text-center' style='background-color:gray;color:white;border-radius: 1rem 0 0 1rem;'>Create Route</h3>
 						<hr>
-						<form class='card-body' method='POST' action='manage-route.php'>
+						<form class='card-body'  style='background-color:gray;color:white;' method='POST' action='manage-route.php'>
 							<div class='form-group'>
 								<label>Start:</label>
 								<input type='text' class='form-control' name='start' required>
@@ -42,7 +54,7 @@
 							</div>
 							<br>
 							<div class='text-center'>
-								<button type='submit' name='add_route' class='btn btn-outline-primary w-50'>ADD</button>
+								<button type='submit' name='add_route' class='btn btn-outline-dark w-50'>ADD</button>
 							</div>
 						</form>
 					</div>
