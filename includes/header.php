@@ -1,5 +1,13 @@
-<nav class="navbar navbar-expand-md">
-    <p class="text-primary"><a class="navbar-brand" href="../index.php">ERP Model.</a></p>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-md" style="background-color:black;color:#fff;border-color: #080808;padding-bottom:0 0 4.5rem ; font-family: 'Montserrat', sans-serif; ">
+    
+    <p class="text-primary" style="padding-top: 10px;"><a class="navbar-brand"  style="color:#D6E4E5; font-family: 'Montserrat', sans-serif;" href="http://localhost/school-management-website/index.php">ERP Model.</a></p>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fa fa-bars text-primary" aria-hidden="true"></i>
