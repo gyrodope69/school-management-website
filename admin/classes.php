@@ -14,7 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+ <style type="text/css">
+
+.btn {
+border-color: white;
+color: #181D31;
+background-color:white;
+}
+.btn-outline-info {
+color: #579BB1;
+border-color: white;
+}
+</style>
+    </head>
 
 <body>
     <div class="container-fluid p-4">
@@ -24,7 +36,7 @@
 
             if ($query == "add") {
                 echo "
-                    <div class='card account custom-shadow mt-5 p-3'>
+                    <div class='card account custom-shadow mt-5 p-3'  style='background-color:#579BB1;color:white;border-radius: 1rem 0 0 1rem';>
                         <h3 class='text-center'>Add Class</h3>
                         <hr>
                         <form class='card-body' method='POST' action='manage-class.php'>
@@ -54,7 +66,7 @@
                             </div>
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='add_class' class='btn btn-outline-primary w-50'>ADD</button>
+                                <button type='submit' name='add_class' class='btn btn-outline-info w-50'>ADD</button>
                             </div>
                         </form>
                     </div>
