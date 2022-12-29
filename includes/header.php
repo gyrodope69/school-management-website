@@ -36,10 +36,10 @@
             echo '
                 <ul class="navbar-nav text-center">
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="./admin/admin.php">Dashboard</a>
+                        <a class="nav-link" href="../admin/admin.php">Dashboard</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-primary" href="./logout.php">Logout</a>
+                        <a class="nav-link text-primary" href="../logout.php">Logout</a>
                     </li>
                 </ul>
             ';
@@ -65,13 +65,13 @@
                         <a class="nav-link" href="./teacher/grade.php">Grade</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../teacher/attendance.php">Attendance</a>
+                        <a class="nav-link" href="./teacher/attendance.php">Attendance</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../profile.php">Profile</a>
+                        <a class="nav-link" href="./profile.php">Profile</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="../logout.php">Logout</a>
+                        <a class="nav-link" href="./logout.php">Logout</a>
                     </li>
                 </ul>
             ';

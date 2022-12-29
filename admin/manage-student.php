@@ -35,7 +35,7 @@ if (isset($_POST["update_student"])) {
     $password = $_POST["password"];
 
 
-    $find_student = "SELECT * FROM students WHERE `student_id` = '$student_id'";
+    $find_student = "SELECT * FROM students WHERE `email` = '$email'";
     $response = mysqli_query($conn, $find_student) or die(mysqli_error($conn));
     if (mysqli_num_rows($response) == 1) {
         if ($password == NULL) {

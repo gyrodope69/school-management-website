@@ -3,10 +3,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home | ERP Model</title>
@@ -64,8 +60,10 @@
                 <div class="text-center"style="background-color:black;color:#fff;">
                     <h4>ANNOUNCEMENTS</h4>
                 </div>     
-                <ul id="notice" class="text-center p-3" >
-                <marquee direction="up" scrollamount="3" behavior="scroll-alternate" loop="" >
+
+                <ul id="notice" class="text-center p-3">
+                <marquee direction="up" scrollamount="3" behavior="scroll-alternate" loop="">
+
                     <?php
                     $announcements_query = "SELECT * FROM announcements WHERE active = 1 ORDER BY announcement_id ASC";
                     $response = mysqli_query($conn, $announcements_query);
@@ -93,12 +91,13 @@
         </div>
         <br>
 
-        <div class="jumbotron jumbotron-fluid mt-5 " id="hi" style="padding:5%; background-color: white;">
-            <div class="check" style="padding:3%; background-color: #e9ecef;">
-                <h2>Today's Transport Schedules</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
-                <?php
-                $today = strtolower(date('l'));
+//
+        <div class="jumbotron jumbotron-fluid mt-5" style="padding: 50px 50px 50px 50px; margin: 4.5rem">
+            <h2 align="left">Today's Transport Schedules</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
+            <?php
+            $today = strtolower(date('l'));
+
 
                 $schedules_query = "SELECT * FROM vehicles_schedule WHERE day = '$today' ORDER BY departure";
                 $response = mysqli_query($conn, $schedules_query);
@@ -150,47 +149,56 @@
             </div>
         </div>
 
-        <div class="service-container" id="our-services">
-            <h1>Our Services</h1>
-            <div class="services">
-                <div class="service">
-                    <img src="./assets/vendor/slideshow-img-1.jpg" class="img-responsive service-img" alt="">
-                    <div class="service-text p-4">
-                        <h4>Service Text</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores, vitae quasi magni iusto natus inventore nam ipsam harum saepe dolores autem aut reiciendis nemo nesciunt, accusantium, facere rem ipsum!</p>
+        <div class="service-container" id="our-services" style="padding: 10px 0px 0px 0px; margin: 4.5rem">
+            <h2 align="left">Our Services</h2>
+            <div class="card-group">
+                <div class="card shov">
+                    <img class="card-img-top img-responsive service-img" src="./assets/vendor/slideshow-img-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Service title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
-                <div class="service">
-                    <img src="./assets/vendor/slideshow-img-1.jpg" class="img-responsive service-img" alt="">
-                    <div class="service-text p-4">
-                        <h4>Service Text</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores, vitae quasi magni iusto natus inventore nam ipsam harum saepe dolores autem aut reiciendis nemo nesciunt, accusantium, facere rem ipsum!</p>
+                <div class="card shov">
+                    <img class="card-img-top img-responsive service-img" src="./assets/vendor/slideshow-img-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Service title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
-                <div class="service">
-                    <img src="./assets/vendor/slideshow-img-1.jpg" class="img-responsive service-img" alt="">
-                    <div class="service-text p-4">
-                        <h4>Service Text</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores, vitae quasi magni iusto natus inventore nam ipsam harum saepe dolores autem aut reiciendis nemo nesciunt, accusantium, facere rem ipsum!</p>
+                <div class="card shov">
+                    <img class="card-img-top img-responsive service-img" src="./assets/vendor/slideshow-img-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Service title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="jumbotron jumbotron-fluid mt-5" style="padding: 50px 50px 50px 50px; margin: 4.5rem">
+            <div class="row p-3" id="about-us">
+                <h2 align="left">About US</h2>
+                <div class="col-sx-1"></div>
+                <div class="col-xs-10 content pl-4">
+                    <p style="text-align: justify;"><i>“A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.” ~ Alan Turing</i></p>
+                    <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ab mollitia voluptas deleniti dolorum ipsum distinctio quis deserunt, tempore voluptatum. Labore enim molestias impedit, deleniti quaerat maiores deserunt cum iure.</p>
+                    <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ab mollitia voluptas deleniti dolorum ipsum distinctio quis deserunt, tempore voluptatum. Labore enim molestias impedit, deleniti quaerat maiores deserunt cum iure.</p>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste sequi ea in, nam impedit quis reiciendis sed perspiciatis animi fuga voluptate minima cupiditate nisi voluptatem ut culpa accusantium! Sequi in quae fugiat tempore. Deserunt, ut adipisci ipsum quidem ipsam sed ab voluptates, animi dignissimos tempora saepe veniam mollitia corporis?</p>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, maiores rem magnam sint quibusdam fugit labore quod error, ipsa beatae atque minus consequatur. Ipsam pariatur recusandae vero suscipit totam, sapiente impedit ut ex necessitatibus harum labore debitis non dolores nobis nulla tempora exercitationem minus, illo distinctio? Vitae suscipit expedita quas?</p>
+                    <p><b>Mr. Swaraj Kumar Chaudhary<br>Head of Organization<br>swarajkumarchaudhary1729@gmail.com</b></p>
 
-        <div class="row p-3" id="about-us">
-            <div class="col-sx-1"></div>
-            <div class="col-xs-10 content pl-4">
-                <p style="text-align: justify;"><i>“A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.” ~ Alan Turing</i></p>
-                <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ab mollitia voluptas deleniti dolorum ipsum distinctio quis deserunt, tempore voluptatum. Labore enim molestias impedit, deleniti quaerat maiores deserunt cum iure.</p>
-                <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ab mollitia voluptas deleniti dolorum ipsum distinctio quis deserunt, tempore voluptatum. Labore enim molestias impedit, deleniti quaerat maiores deserunt cum iure.</p>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste sequi ea in, nam impedit quis reiciendis sed perspiciatis animi fuga voluptate minima cupiditate nisi voluptatem ut culpa accusantium! Sequi in quae fugiat tempore. Deserunt, ut adipisci ipsum quidem ipsam sed ab voluptates, animi dignissimos tempora saepe veniam mollitia corporis?</p>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste sequi ea in, nam impedit quis reiciendis sed perspiciatis animi fuga voluptate minima cupiditate nisi voluptatem ut culpa accusantium! Sequi in quae fugiat tempore. Deserunt, ut adipisci ipsum quidem ipsam sed ab voluptates, animi dignissimos tempora saepe veniam mollitia corporis?</p>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste sequi ea in, nam impedit quis reiciendis sed perspiciatis animi fuga voluptate minima cupiditate nisi voluptatem ut culpa accusantium! Sequi in quae fugiat tempore. Deserunt, ut adipisci ipsum quidem ipsam sed ab voluptates, animi dignissimos tempora saepe veniam mollitia corporis?</p>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, maiores rem magnam sint quibusdam fugit labore quod error, ipsa beatae atque minus consequatur. Ipsam pariatur recusandae vero suscipit totam, sapiente impedit ut ex necessitatibus harum labore debitis non dolores nobis nulla tempora exercitationem minus, illo distinctio? Vitae suscipit expedita quas?</p>
-                <p><b>Mr. Swaraj Kumar Chaudhary<br>Head of Organization<br>swarajkumarchaudhary1729@gmail.com</b></p>
-
-                </b>
+                    </b>
+                </div>
             </div>
         </div>
 

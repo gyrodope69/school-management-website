@@ -15,7 +15,7 @@
         }
 
         .sidenav {
-            background-color: #f1f1f1;
+            background-color: lightgray;
             height: 100%;
         }
 
@@ -111,20 +111,20 @@
                    alert.classList.add("hide");
                 </script>
             <?php } ?>
-                <div class="well">
+                <div class="well"  style="background-color:lightgray;>
                     <h4>Dashboard</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laudantium. Hic suscipit modi, molestiae a veniam tenetur officiis nostrum. Doloribus praesentium dolorum culpa corporis qui quas magnam corrupti enim fugiat.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="well">
+                        <div class="well"  style="background-color:#e6e2d3;">
                             <h4>Ongoing Academic Year</h4>
                             <p>01-06-22 to 01-06-23</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eaque!</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="well">
+                        <div class="well"  style="background-color:#e6e2d3;">
                             <h4>Ongoing Financial Year</h4>
                             <p>01-06-22 to 01-06-23</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sequi!</p>
@@ -141,20 +141,11 @@
                     $response = mysqli_query($conn, $student_query) or die(mysqli_error($conn));
                     $student_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
 
-                    // $class_id = $student_details["class_id"];
-
-                    $class_id = isset($student_details['class_id']) ? count($student_details['class_id']) : 0; 
-
-
-                    // $student_id = $student_details["student_id"];
-                    $student_id = isset($student_details['student_id']) ? count($student_details['student_id']) : 0; 
-
-
-                    // $subject_ids = isset($student_details['subject_ids']) ? count($student_details['subject_ids']) : 0; 
+                    $class_id = $student_details["class_id"];
+                    $student_id = $student_details["student_id"];
                     $subject_ids = json_decode($student_details["subject_ids"]);
-                    // if (is_countable($subject_ids) && count($subject_ids) > 0) ;
 
-                    for ($i = 0; $i < is_countable($subject_ids); $i++) {
+                    for ($i = 0; $i < sizeof($subject_ids); $i++) {
                         $subject_id = $subject_ids[$i];
 
                         $subject_query = "SELECT subjects.title, subjects.descr, subjects.code, subjects.credit, teachers.name 
