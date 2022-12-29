@@ -15,7 +15,7 @@
         }
 
         .sidenav {
-            background-color: #f1f1f1;
+            background-color: lightgray;
             height: 100%;
         }
 
@@ -111,20 +111,20 @@
                    alert.classList.add("hide");
                 </script>
             <?php } ?>
-                <div class="well">
+                <div class="well"  style="background-color:lightgray;>
                     <h4>Dashboard</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laudantium. Hic suscipit modi, molestiae a veniam tenetur officiis nostrum. Doloribus praesentium dolorum culpa corporis qui quas magnam corrupti enim fugiat.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="well">
+                        <div class="well"  style="background-color:#e6e2d3;">
                             <h4>Ongoing Academic Year</h4>
                             <p>01-06-22 to 01-06-23</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eaque!</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="well">
+                        <div class="well"  style="background-color:#e6e2d3;">
                             <h4>Ongoing Financial Year</h4>
                             <p>01-06-22 to 01-06-23</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sequi!</p>
