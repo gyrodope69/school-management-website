@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding:0;">
         <?php
         if ($_SESSION["user_category"] == "teacher") {
             include("../includes/header2.php");

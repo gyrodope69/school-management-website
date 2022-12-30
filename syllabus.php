@@ -20,7 +20,7 @@
     </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding:0;">
         <?php include("./includes/header.php") ?>
 
         <?php
