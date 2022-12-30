@@ -111,7 +111,7 @@
                    alert.classList.add("hide");
                 </script>
             <?php } ?>
-                <div class="well"  style="background-color:lightgray;>
+                <div class="well"  style="background-color:lightgray;">
                     <h4>Dashboard</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laudantium. Hic suscipit modi, molestiae a veniam tenetur officiis nostrum. Doloribus praesentium dolorum culpa corporis qui quas magnam corrupti enim fugiat.</p>
                 </div>
@@ -191,7 +191,7 @@
 
                         echo "
                             <div class='col-sm-6'>
-                                <div class='well'>
+                                <div class='well' style='background-color:Gainsboro;'>
                                     <h4>$subject_title</h4>
                                     <p>$subject_descr</p>
                                     <p>Code : $subject_code</p>
