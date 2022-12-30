@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         .row.content {
-            height: 80vh;
+            height: 100%;
         }
 
         .sidenav {
@@ -86,7 +86,7 @@
     <div class="container-fluid">
         <div class="row content">
             <div class="col-sm-2 sidenav hidden-xs">
-                <h4>ERP Model.</h4>
+                <h4><b>ERP Model.</b></h4>
                 <?php
                 if (isset($_GET["transport"]) && $_GET["transport"] == true) {
                     echo "
@@ -131,21 +131,21 @@
 
             <div class="col-sm-10">
                 <div class="well" style="background-color:lightgray;">
-                    <h4>Dashboard</h4>
+                    <h4><b>Dashboard</b></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laudantium. Hic suscipit modi, molestiae a veniam tenetur officiis nostrum. Doloribus praesentium dolorum culpa corporis qui quas magnam corrupti enim fugiat.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="well" style="background-color:#e6e2d3;">
-                            <h4>Ongoing Academic Year</h4>
-                            <p>01-06-22 to 01-06-23</p>
+                            <h4><b>Ongoing Academic Year</b></h4>
+                            <p><em>01-06-22 to 01-06-23</em></p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eaque!</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="well" style="background-color:#e6e2d3;" >
-                            <h4>Ongoing Financial Year</h4>
-                            <p>01-06-22 to 01-06-23</p>
+                            <h4><b>Ongoing Financial Year</b></h4>
+                            <p><em>01-06-22 to 01-06-23</em></p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sequi!</p>
                         </div>
                     </div>
