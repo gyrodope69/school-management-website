@@ -33,17 +33,17 @@
                 $student_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
 
                 echo "
-                    <div class='card account custom-shadow p-2'>
+                    <div class='card account custom-shadow p-2' style='background-color:cadetblue;'>
                         <h3 class='text-center'>Edit Profile</h3>
                         <hr>
                     
                         <form class='card-body' method='POST' action='./account-api.php?student_id={$student_details['student_id']}'>
-                            <div class='form-group'>
+                            <div class='form-group' style='background-color:#e6e2d3;'>
                                 <label>Full Name:</label>
                                 <input type='text' class='form-control' name='name' value='{$student_details['name']}' required>
                             </div>
 
-                            <div class='form-group'>
+                            <div class='form-group' style='background-color:#e6e2d3;' >
                                 <label>Email:</label>
                                 <input type='email' class='form-control' name='email' value='{$email}' readonly>
                             </div>
@@ -52,7 +52,7 @@
 
                 if($student_details['gender'] == 'male'){
                     echo "
-                        <div class='form-group'>
+                        <div class='form-group' style='background-color:#e6e2d3;'>
                             <label>Gender:</label>
                             <select class='form-control' name='gender' required>
                                 <option selected value='male'>Male</option>
@@ -64,7 +64,7 @@
 
                 }else if($student_details['gender'] == 'female'){
                     echo "
-                        <div class='form-group'>
+                        <div class='form-group' style='background-color:#e6e2d3;'>
                             <label>Gender:</label>
                             <select class='form-control' name='gender' required>
                                 <option value='male'>Male</option>
@@ -75,7 +75,7 @@
                     ";
                 }else{
                     echo "
-                        <div class='form-group'>
+                        <div class='form-group' style='background-color:#e6e2d3;'>
                             <label>Gender:</label>
                             <select class='form-control' name='gender' required>
                                 <option value='male'>Male</option>
@@ -89,14 +89,14 @@
                 echo "
                             <div class='row'>
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>Phone:</label>
                                         <input type='number' class='form-control' name='phone' value={$student_details['phone']} required>
                                     </div>
                                 </div>
 
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>D.O.B:</label>
                                         <input type='date' class='form-control' name='dob' value={$student_details['dob']}>
                                     </div>
@@ -105,7 +105,7 @@
 
                             <div class='row'>
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>Address:</label>
                                         <textarea type='text' class='form-control' name='address' cols='6' rows='2' required>{$student_details['address']}</textarea>
                                     </div>
@@ -145,13 +145,13 @@
                             <input type='text' class='form-control' name='name' value='{$teacher_details['name']}' required>
                         </div>
 
-                        <div class='form-group'>
+                        <div class='form-group' style='background-color:cadetblue;'>
                             <label>Email:</label>
                             <input type='email' class='form-control' name='email' value='$email' readonly>
                         </div>
                         <div class='row'>
                             <div class='col'>
-                                <div class='form-group'>
+                                <div class='form-group' style='background-color:#e6e2d3;'>
                                     <label>Designation:</label>
                                     <input type='text' class='form-control' name='designation' value='{$teacher_details['designation']}' readonly>
                                 </div>
@@ -161,7 +161,7 @@
                 if($teacher_details['gender'] == 'male'){
                     echo "
                             <div class='col'>
-                                <div class='form-group'>
+                                <div class='form-group' style='background-color:#e6e2d3;'>
                                     <label>Gender:</label>
                                     <select class='form-control' name='gender' required>
                                         <option selected value='male'>Male</option>
@@ -176,7 +176,7 @@
                 }else if($teacher_details['gender'] == 'female'){
                     echo "
                             <div class='col'>
-                                <div class='form-group'>
+                                <div class='form-group' style='background-color:#e6e2d3;'>
                                     <label>Gender:</label>
                                     <select class='form-control' name='gender' required>
                                         <option value='male'>Male</option>
@@ -190,7 +190,7 @@
                 }else{
                     echo "
                             <div class='col'>
-                                <div class='form-group'>
+                                <div class='form-group' style='background-color:#e6e2d3;'>
                                     <label>Gender:</label>
                                     <select class='form-control' name='gender' required>
                                         <option value='male'>Male</option>
@@ -206,14 +206,14 @@
                 echo "
                             <div class='row'>
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>Phone:</label>
                                         <input type='number' class='form-control' name='phone' value={$teacher_details['phone']} required>
                                     </div>
                                 </div>
 
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>D.O.J:</label>
                                         <input type='date' class='form-control' name='doj' value={$teacher_details['doj']} readonly>
                                     </div>
@@ -223,7 +223,7 @@
 
                             <div class='row'>
                                 <div class='col'>
-                                    <div class='form-group'>
+                                    <div class='form-group' style='background-color:#e6e2d3;'>
                                         <label>Address:</label>
                                         <textarea type='text' class='form-control' name='address' cols='6' rows='2' required>{$teacher_details['address']}</textarea>
                                     </div>
