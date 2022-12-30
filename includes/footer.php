@@ -20,7 +20,7 @@
             <div class="col-md-2 row-col">
                 <ul>
                     <h4>Explore</h4>
-                    <li><a href="../index.php">Homepage</a></li>
+                    <li><a href="./index.php">Homepage</a></li>
                     <li><a href="#!">TEQIP III</a></li>
                     <li><a href="#!">Training & Placements</a></li>
                 </ul>
