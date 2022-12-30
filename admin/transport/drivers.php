@@ -64,16 +64,18 @@
 <body>
      <div class="container-fluid p-4" style="background-color: white; border-radius: .5rem .5rem 0 0;">
     <div class="row g-0">
-        <div class="col-md-6 col-lg-6 d-none d-md-block">
-                <img src="./panda_add.jpg" alt="School Preview"
-                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;width: 500px;height: 724px;" />
-        </div>
+       
         <?php
         if ($_SESSION["user_category"] == "admin") {
             $query = $_GET["query"];
             
             if ($query == "add") {
                 echo "
+                 <div class='col-md-6 col-lg-6 d-none d-md-block'>
+                        <img src='./panda_add.jpg' alt='School Preview'
+                            alt='login form' class='img-fluid' style='border-radius: 1rem 0 0 1rem;width: 540px;height: 724px;' />
+                </div>
+                
                     <div class='card account custom-shadow mt-4 p-3 col-md-6 col-lg-6'>
                             <div class='topic' style='background-color:#00E7FF;color:white;padding-top:12px';>   
                              <h3 class='text-center' >Add Driver</h3>
