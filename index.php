@@ -91,7 +91,6 @@
         </div>
         <br>
 
-//
         <div class="jumbotron jumbotron-fluid mt-5" style="padding: 50px 50px 50px 50px; margin: 4.5rem">
             <h2 align="left">Today's Transport Schedules</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ex nisi accusamus debitis nam quisquam facere tempora asperiores tempore optio?</p>
@@ -150,7 +149,7 @@
         </div>
 
         <div class="service-container" id="our-services" style="padding: 10px 0px 0px 0px; margin: 4.5rem">
-            <h2 align="left">Our Services</h2>
+            <h2 align="left" style="padding: 0px 0px 0px 50px;">Our Services</h2>
             <div class="card-group">
                 <div class="card shov">
                     <img class="card-img-top img-responsive service-img" src="./assets/vendor/slideshow-img-1.jpg" alt="Card image cap">
