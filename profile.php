@@ -118,7 +118,7 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_student' class='btn btn-outline-primary w-50'>Update Profile</button>
+                                <button type='submit' name='update_student' class='btn btn-dark w-50'>Update Profile</button>
                             </div>
                         </form>
                     </div>
@@ -135,7 +135,7 @@
                 $teacher_details = mysqli_fetch_array($response, MYSQLI_ASSOC);
 
                 echo "
-                    <div class='card account custom-shadow mt-5 p-2'>
+                    <div class='card account custom-shadow mt-5 p-2' style='background-color:cadetblue;'>
                     <h3 class='text-center'>Update Teacher</h3>
                     <hr>
                 
@@ -145,7 +145,7 @@
                             <input type='text' class='form-control' name='name' value='{$teacher_details['name']}' required>
                         </div>
 
-                        <div class='form-group' style='background-color:cadetblue;'>
+                        <div class='form-group' style='background-color:#e6e2d3;'>
                             <label>Email:</label>
                             <input type='email' class='form-control' name='email' value='$email' readonly>
                         </div>
@@ -236,7 +236,7 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_teacher' class='btn btn-outline-primary w-50'>Update Profile</button>
+                                <button type='submit' name='update_teacher' class='btn btn-dark w-50'>Update Profile</button>
                             </div>
                         </form>
                     </div>
