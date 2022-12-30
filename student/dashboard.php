@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.php">ERP Model</a>
+                <a class="navbar-brand" href="../index.php"><b>ERP Model.</b></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class='nav nav-pills nav-stacked'>
@@ -75,7 +75,7 @@
     <div class="container-fluid">
         <div class="row content">
             <div class="col-sm-2 sidenav hidden-xs">
-                <h4>ERP Model.</h4>
+                <h4><b>ERP Model.</b></h4>
                 <ul class='nav nav-pills nav-stacked'>
                     <li><a href='./dashboard.php'>Dashboard</a></li>
                     <li><a href='../timetable.php'>Timetable</a></li>
@@ -111,22 +111,26 @@
                    alert.classList.add("hide");
                 </script>
             <?php } ?>
-                <div class="well"  style="background-color:lightgray;>
-                    <h4>Dashboard</h4>
+            <div class="row">
+            <div class="col-sm-12">
+                <div  class="well"  style="background-color:lightgray;">
+                    <h4><b>Dashboard</b></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laudantium. Hic suscipit modi, molestiae a veniam tenetur officiis nostrum. Doloribus praesentium dolorum culpa corporis qui quas magnam corrupti enim fugiat.</p>
                 </div>
+                </div>
+            </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="well"  style="background-color:#e6e2d3;">
-                            <h4>Ongoing Academic Year</h4>
-                            <p>01-06-22 to 01-06-23</p>
+                            <h4><b>Ongoing Academic Year</b></h4>
+                            <p><em>01-06-22 to 01-06-23</em></p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eaque!</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="well"  style="background-color:#e6e2d3;">
-                            <h4>Ongoing Financial Year</h4>
-                            <p>01-06-22 to 01-06-23</p>
+                            <h4><b>Ongoing Financial Year</b></h4>
+                            <p><em>01-06-22 to 01-06-23</em></p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sequi!</p>
                         </div>
                     </div>
@@ -192,16 +196,16 @@
                         echo "
                             <div class='col-sm-6'>
                                 <div class='well'>
-                                    <h4>$subject_title</h4>
+                                    <h4><b>$subject_title</b></h4>
                                     <p>$subject_descr</p>
-                                    <p>Code : $subject_code</p>
-                                    <p>Credit : $subject_credit</p>
-                                    <p>Lecturer : $teacher_name</p>
-                                    <p>Attendance : $attendance_percentage</p>
-                                    <p>Mid Term 1 (25) : $mid_term_1</p>
-                                    <p>Mid Term 2 (25) : $mid_term_2</p>
-                                    <p>End Term (25) : $end_term</p>
-                                    <p>Assignments & Vivas (25) : $end_term</p>
+                                    <p><b>Code :</b> $subject_code</p>
+                                    <p><b>Credit :</b> $subject_credit</p>
+                                    <p><b>Lecturer :</b> $teacher_name</p>
+                                    <p><b>Attendance :</b> $attendance_percentage</p>
+                                    <p><b>Mid Term 1 (25) :</b> $mid_term_1</p>
+                                    <p><b>Mid Term 2 (25) :</b> $mid_term_2</p>
+                                    <p><b>End Term (25) :</b> $end_term</p>
+                                    <p><b>Assignments & Vivas (25) :</b> $end_term</p>
                                 </div>
                             </div>
                         ";
