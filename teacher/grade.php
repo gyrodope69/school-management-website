@@ -14,7 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+ <style type="text/css">
+
+.btn {
+border-color: white;
+color: #0A2647;
+background-color:white;
+}
+.btn-outline-primary {
+color: #0A2647;
+border-color: white;
+}
+</style>
+    </head>
 
 <body>
     <div class="container-fluid">
@@ -33,7 +45,7 @@
 
             if (!isset($_GET["class_id"])) {
                 echo "
-                    <div class='card account custom-shadow mt-4 p-2'>
+                    <div class='card account custom-shadow mt-4 p-2' style='background-color:#0A2647;color:white;border-radius: 1rem 0 0 1rem'>
                         <h3 class='text-center'>Choose Standard</h3>
                         <hr>
                         <form class='card-body' method='POST' action='manage-grade.php'>
@@ -93,7 +105,7 @@
                 }
 
                 echo "
-                    <div class='card account custom-shadow mt-4 p-1'>
+                    <div class='card account custom-shadow mt-4 p-1' style='background-color:#0A2647;color:white;border-radius: 1rem 0 0 1rem'>
                         <h3 class='text-center'>Choose Subject</h3>
                         <hr>
                         <form class='card-body' method='POST' action='manage-grade.php'>
