@@ -118,7 +118,7 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_student' class='btn btn-outline-primary w-50'>Update Profile</button>
+                                <button type='submit' name='update_student' class='btn btn-dark w-50'>Update Profile</button>
                             </div>
                         </form>
                     </div>
@@ -236,7 +236,7 @@
 
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='update_teacher' class='btn btn-outline-primary w-50'>Update Profile</button>
+                                <button type='submit' name='update_teacher' class='btn btn-dark w-50'>Update Profile</button>
                             </div>
                         </form>
                     </div>
