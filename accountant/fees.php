@@ -1,17 +1,36 @@
 <?php include('../config.php');?>
-<style>
-	input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.3); /* IE */
-  -moz-transform: scale(1.3); /* FF */
-  -webkit-transform: scale(1.3); /* Safari and Chrome */
-  -o-transform: scale(1.3); /* Opera */
-  transform: scale(1.3);
-  padding: 10px;
-  cursor:pointer;
-}
-</style>
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | ERP Model</title>
+        <link rel="stylesheet" href="./assets/css/base-styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			input[type=checkbox]
+			{
+			  /* Double-sized Checkboxes */
+			  -ms-transform: scale(1.3); /* IE */
+			  -moz-transform: scale(1.3); /* FF */
+			  -webkit-transform: scale(1.3); /* Safari and Chrome */
+			  -o-transform: scale(1.3); /* Opera */
+			  transform: scale(1.3);
+			  padding: 10px;
+			  cursor:pointer;
+			}
+		</style>
+    </head>
+
+	<body>
+
 <div class="container-fluid">
 	
 	<div class="col-lg-12">
@@ -26,24 +45,24 @@
 			<!-- Table Panel -->
 			<div class="col-md-12">
 				<div class="card">
-					<div class="card-header">
-						<b>List of Student fees </b>
+					<div class="card-header" style="background-color:#1d3b55">
+						<b style="color:white">List of Student fees </b>
 						<span class="float:right"><a class="btn btn-primary btn-block btn-sm col-sm-2 float-right" href="javascript:void(0)" id="new_fees">
 					<i class="fa fa-plus"></i> New 
 				</a></span>
 					</div>
-					<div class="card-body">
+					<div class="card-body table-responsive">
 						<table class="table table-condensed table-bordered table-hover">
 							<thead>
-								<tr>
-									<th class="text-center">#</th>
-									<th class="">ID No.</th>
-									<th class="">EF No.</th>
-									<th class="">Name</th>
-									<th class="">Payable Fee</th>
-									<th class="">Paid</th>
-									<th class="">Balance</th>
-									<th class="">month</th>
+								<tr style="background-color:#87CEFA">
+									<th class="text-center">S.No.</th>
+									<th class="text-center">ID No.</th>
+									<th class="text-center">EF No.</th>
+									<th class="text-center">Name</th>
+									<th class="text-center">Payable Fee</th>
+									<th class="text-center">Paid</th>
+									<th class="text-center">Balance</th>
+									<th class="text-center">Month</th>
 									<th class="text-center">Action</th>
 								</tr>
 							</thead>
@@ -99,6 +118,8 @@
 	</div>	
 
 </div>
+</body>
+</html>
 <style>
 	
 	td{
