@@ -83,9 +83,17 @@
                     <li class="nav-item p-2">
                         <a class="nav-link" href="./accountant/index.php">Dashboard</a>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="./accountant/index.php">Fees, Payments & Receipts</a>
+                    
+                     <li class="nav-item p-2">
+                        <a class="nav-link text-light" href="./accountant/fees.php">Fees</a>
                     </li>
+                    <li class="nav-item p-2">
+                    <a class="nav-link text-light" href="./accountant/payments.php">Payments</a>
+                </li>
+                <li class="nav-item p-2">
+                <a class="nav-link text-light" href="./accountant/receipts.php">Receipts</a>
+            </li>
+                    
                     <li class="nav-item p-2">
                         <a class="nav-link text-primary" href="./logout.php">Logout</a>
                     </li>
