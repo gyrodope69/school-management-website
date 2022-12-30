@@ -8,7 +8,7 @@
 	}
 </style>
 
-<nav id="sidebar" class='mx-lt-5 bg-info'>
+<nav id="sidebar" class='mx-lt-5' style="background-color:#87CEFA">
 
 	<div class="sidebar-list">
 		<a href="index.php?page=fees" class="nav-item nav-fees"><span class='icon-field'><i class="fa fa-money-check "></i></span> Student Fees</a>
