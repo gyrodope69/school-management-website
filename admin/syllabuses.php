@@ -62,7 +62,7 @@ border-color: white;
                             </div>
                             <br>
                             <div class='text-center'>
-                                <button type='submit' name='add_syllabus' class='btn btn-outline-primary w-50'>ADD</button>
+                                <button type='submit' name='add_syllabus' class='btn btn-outline-dark w-50'>ADD</button>
                             </div>
                         </form>
                     </div>
