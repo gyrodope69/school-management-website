@@ -17,6 +17,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+                .btn {
+        border-color: white;
+        color: #144272;
+        background-color:white;
+        }
+        .btn-outline-dark {
+        color: #144272;
+        border-color: white;
+        }
+        </style>
+
     </head>
 
 <body>
@@ -31,9 +43,9 @@
 
                 echo "
                     <div class='card account custom-shadow mt-5 mb-5 p-3'>
-                        <h3 class='text-center'>Get Syllabus</h3>
+                       <h3 class='text-center' style='background-color:#144272;color:white;border-radius: 1rem 0 0 1rem;'>Get Syllabus📚</h3>
                         <hr>
-                        <form class='card-body' method='POST' action='find-file.php'>
+                        <form class='card-body'style='background-color:#144272;color:white;' method='POST' action='find-file.php'>
                             <div class='form-group'>
                                 <label>Select Standard:</label>
                                 <select class='form-control' name='class_id'>
